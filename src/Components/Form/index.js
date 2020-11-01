@@ -62,28 +62,28 @@ const sendForm = (e) =>{
                     </div>
                         <label>Nombre</label>
                     <div className="item">
-                        <input type="text" required value={name} onChange={({target: {value}})=> setName(value)}/>
+                        <input type="text" required value={name} onChange={({target: {value}})=> setName(value)} autoComplete="off"/>
                         {/* <p className="errorMsg">{emailError}</p> */}
                     </div>
                         <label>Apellido</label>
                     <div className="item">
-                        <input type="text" required value={surname} onChange={({target: {value}})=> setSurname(value)}/>
+                        <input type="text" required value={surname} onChange={({target: {value}})=> setSurname(value)} autoComplete="off"/>
                     </div>
                         <label>Correo</label>
                     <div className="item">
-                        <input type="email" required value={email} onChange={({target: {value}})=> setEmail(value)}/>
+                        <input type="email" required value={email} onChange={({target: {value}})=> setEmail(value)} autoComplete="off"/>
                     </div>
                         <label>Teléfono</label>
                     <div className="item">
-                        <input type="number"  required value={phone} onChange={({target: {value}})=> setPhone(value)}/>
+                        <input type="number"  required value={phone} onChange={({target: {value}})=> setPhone(value)} autoComplete="off"/>
                     </div>
                         <label>Fecha de Nacimiento</label>
                     <div className="item">
-                        <input type="date" required value={dateBirth} onChange={({target: {value}})=> setDateBirth(value)}/>
+                        <input type="date" required value={dateBirth} onChange={({target: {value}})=> setDateBirth(value)} autoComplete="off"/>
                     </div>
                         <label>Dirección</label>
                     <div className="item">
-                        <input type="text" required value={address} onChange={({target: {value}})=> setAddress(value)}/>
+                        <input type="text" required value={address} onChange={({target: {value}})=> setAddress(value)} autoComplete="off"/>
                         </div>
                     <div className="btnContainer">
                         <input type="submit" id="btnSubmit" value="Submit"/>
